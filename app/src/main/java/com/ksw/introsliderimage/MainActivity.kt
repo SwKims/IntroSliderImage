@@ -55,7 +55,8 @@ class MainActivity : AppCompatActivity() {
         button_next.setOnClickListener {
             if (introSlider.currentItem + 1 < introSliderAdapter.itemCount) {
                 introSlider.currentItem += 1
-            } else {
+            }
+            else {
                 Intent(applicationContext, AnotherActivity::class.java).also {
                     startActivity(it)
                     finish()

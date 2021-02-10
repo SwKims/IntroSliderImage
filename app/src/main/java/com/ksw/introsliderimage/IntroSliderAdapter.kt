@@ -28,11 +28,8 @@ class IntroSliderAdapter(private val introSlides: List<IntroSlide>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IntroSlideViewHolder {
         return IntroSlideViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.slide_item_container,
-                parent,
-                false
-            )
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.slide_item_container, parent, false)
         )
     }
 
